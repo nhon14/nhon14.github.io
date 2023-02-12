@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(55, 61, 61);
+    scroll-behavior: smooth;
+    scroll-margin-top: 2rem;
+}
+
+body {
+    margin: 0;
+    margin-top: 1.65rem;
+}
+
+/* nav */
+
+nav {
+    background-color: rgb(55, 61, 61);
+    /* must have a position in conjunction w/ top, right, left, bottom */
+    position: fixed;
+    /* default z-index is 0, set to 1 so image doesn't appear over banner */
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: left;
+  }
+  
+  nav ul {
+    margin: .25rem;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  
+  nav a {
+    color: #FFF;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: rgb(237, 126, 126);
+  }
+
+/* banner image */
+
+#main-image {
+    object-fit: cover;
+    object-position: top center;
+    max-width: 100%;
+    height: 20rem;
+    opacity: 75%;
+}
+
+.banner-image {
+    position: sticky;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* about me */
+
+.bio-header1 {
+    text-align: center;
+    color: rgb(164, 79, 79);
+}
+
+.bio-header2 {
+    text-align: center;
+    color: rgb(237, 126, 126);
+}
+
+.bio-image {
+    position: relative;
+}
+
+.bio-image img {
+    object-fit: cover;
+    width: 11rem;
+    height: 11rem;
+    filter: grayscale(100%);
+}
+
+.float-left {
+    float: left;
+    margin-left: 5rem;
+    margin-right: 1rem;
+}
+
+.round {
+    border-radius: 10rem;
+    overflow: hidden;
+}
+
+.bio-text {
+    font-size: 1.2rem;
+    font-family: Georgia;
+    background-color: transparent;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    color: rgb(205, 205, 205);
+}
+
+.clear {
+    clear: both;
+}
+
+.interests > h1 {
+    color: rgb(237, 126, 126);
+}
+
+.interests > h1,
+.interest-list {
+    margin-left: 8rem;
+}
+.interest-list {
+    font-size: 1.2rem;
+    color: rgb(183, 217, 247);
+}
+
+a:link {
+    color: rgb(222, 243, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(222, 243, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(71, 138, 177);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.hobby-image {
+    position: relative;
+}
+
+.hobby-image img {
+    border: 0.2rem solid rgb(237, 126, 126);
+    border-radius: 0.5rem;
+    width: 20rem;
+}
+
+.float-right {
+    float: right;
+    margin-right: 8rem;
+    margin-left: 1rem;
+}
+
+/* table */
+
+.current-classes-header {
+    color: rgb(237, 126, 126);
+    margin-left: 8rem;
+    margin-top: 5rem;
+}
+table {
+    width: 50%;
+    table-layout: fixed;
+    border-spacing: 0;
+    margin-bottom: 1rem;
+    margin-left: 8rem;
+}
+
+thead tr {
+    text-align: left;
+    color: aliceblue;
+}
+
+tbody tr:nth-child(odd) {
+    background: rgb(240, 124, 124);
+}
+
+th, td {
+    padding: .4rem .6rem;
+    border: 0.1rem solid;
+    border-color: aliceblue;
+    border-radius: 0.1rem;
+    color: aliceblue;
+    background-color: rgba(226, 42, 42, 0.816);
+}
+
+/* form */
+
+.contact-me-header {
+    margin-left: 8rem;
+    margin-top: 7rem;
+    color: rgb(237, 126, 126);
+}
+
+.form-field {
+    margin-left: 8rem;
+    margin-bottom: 1rem;
+}
+
+.form-field > label {
+    display: block;
+    color: #eee;
+}
+
+.form-field select {
+    width: 100%;
+    padding: .4rem .6rem;
+}
+
+textarea:focus, input:focus {
+    background-color: #c55353;
+    color: #eee;
+}
+
+input, select, textarea {
+    background-color: rgb(246, 140, 140);
+    color: #eee;
+}
+
+button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    border-color: rgb(142, 8, 8);
+    background: #cf3434;
+    color: #eee;
+    margin-top: 0.25rem;
+    margin-left: 8rem;
+}
+
+button:hover {
+    background: rgb(237, 120, 120);
+    border-color: #c55353;
+  }
+
+footer {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: aliceblue;
+}
